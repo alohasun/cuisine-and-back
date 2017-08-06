@@ -6,21 +6,54 @@ app.config(['$routeProvider',function($routeProvider){
 					controller:'MainCtrl'
 			})
 			.when("/main",{
-					templateUrl:"main/main.template.html"
+					templateUrl:"main/main.template.html",
+					controller:'MainCtrl'
 			})
 			.when('/features',{
-					templateUrl:"features/features.template.html"
+					templateUrl:"features/features.template.html",
+				    controller:'FeaturesCtrl'
 			})
 			.when('/works',{
-					templateUrl:"works/works.template.html"
+					templateUrl:"works/works.template.html",
+				    controller:'WorksCtrl'
 			})
 			.when('/cities',{
-					templateUrl:"cities/cities.template.html"
+					templateUrl:"cities/cities.template.html",
+				    controller:'CitiesCtrl'
 			})
 			.when('/plans',{
-					templateUrl:"plans/plans.template.html"
+					templateUrl:"plans/plans.template.html",
+				    controller:'PlansCtrl'
 			})
 				}]);
-app.controller('MainCtrl',[function(){
-	console.log("This is the MainCtrl");
-}]);
+app.controller('MainCtrl',['$scope',function($scope){
+	
+	console.log("MainCtrl");
+	
+}])
+.controller('FeaturesCtrl',['$scope','$http',function($scope,$http){
+	$http.get("features/features.json").then(function(response){
+	$scope.features=response.data;
+	});
+	$http.get("features/meals-photos.json").then(function(response){
+	$scope.photos=response.data;		
+		//console.log(self.features);
+	});
+}])
+.controller('WorksCtrl',['$scope',function($scope){
+	console.log('WorksCtrl');
+}])
+.controller('CitiesCtrl',['$scope','$http',function($scope,$http){
+	$http.get("cities/cities.json").then(function(response){
+		$scope.cities=response.data;
+	});
+	$http.get("cities/customers.json").then(function(response){
+		$scope.customers=response.data;
+	});
+}])
+.controller('PlansCtrl',['$scope','$http',function($scope,$http){
+	$http.get("plans/plans.json").then(function(response){
+		$scope.plans=response.data;
+	});
+}])
+;

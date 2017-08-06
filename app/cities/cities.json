@@ -1,0 +1,38 @@
+[
+	{
+		"id":1,
+		"img":"lisbon-3.jpg",
+		"name":"Lisbon",
+		"person":"1600+ happy eaters",
+		"star":"60+ top chefs",
+		"twitter-href":"#",
+		"twitter":"@omnifood_lx"	
+	},
+	{
+		"id":2,
+		"img":"san-francisco.jpg",
+		"name":"San Francisco",
+		"person":"3700+ happy eaters",
+		"star":"160+ top chefs",
+		"twitter-href":"#",
+		"twitter":"@omnifood_sf"	
+	},
+	{
+		"id":1,
+		"img":"berlin.jpg",
+		"name":"Berlin",
+		"person":"2300+ happy eaters",
+		"star":"110+ top chefs",
+		"twitter-href":"#",
+		"twitter":"@omnifood_berlin"	
+	},
+	{
+		"id":1,
+		"img":"london.jpg",
+		"name":"London",
+		"person":"1200+ happy eaters",
+		"star":"50+ top chefs",
+		"twitter-href":"#",
+		"twitter":"@omnifood_London"	
+	}
+]

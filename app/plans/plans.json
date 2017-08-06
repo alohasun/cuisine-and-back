@@ -1,0 +1,53 @@
+[
+	{
+		"id":1,
+		"title":"Premium",
+		"price":399,
+		"unit":"month",
+		"description":"That's only 13.30$ per meal",
+		"rateClass":"ion-ios-checkmark-empty icon-small",
+		"rate":"1 meal every day",
+		"timeClass":"ion-ios-checkmark-empty icon-small",
+		"time":"Order 24/7",
+		"accessClass":"ion-ios-checkmark-empty icon-small",
+		"access":"Access to newest creations",
+		"deliveryClass":"ion-ios-checkmark-empty icon-small",
+		"delivery":"Free delivery",
+		"href":"#",
+		"btnClass":"btn btn-full"
+	},
+	{
+		"id":2,
+		"title":"Pro",
+		"price":149,
+		"unit":"month",
+		"description":"That's only 14.90$ per meal",
+		"rateClass":"ion-ios-checkmark-empty icon-small",
+		"rate":"1 meal 10 days/month",
+		"timeClass":"ion-ios-checkmark-empty icon-small",
+		"time":"Order 24/7",
+		"accessClass":"ion-ios-checkmark-empty icon-small",
+		"access":"Access to newest creations",
+		"deliveryClass":"ion-ios-checkmark-empty icon-small",
+		"delivery":"Free delivery",
+		"href":"#",
+		"btnClass":"btn btn-ghost"
+	},
+	{
+		"id":3,
+		"title":"Starter",
+		"price":19,
+		"unit":"meal",
+		"description":"That's only 13.30$ per meal",
+		"rateClass":"ion-ios-checkmark-empty icon-small",
+		"rate":"1 meal",
+		"timeClass":"ion-ios-checkmark-empty icon-small",
+		"time":"Order from 8 am to 12 pm",
+		"accessClass":"ion-ios-close-empty icon-small",
+		"access":"",
+		"deliveryClass":"ion-ios-checkmark-empty icon-small",
+		"delivery":"Free delivery",
+		"href":"#",
+		"btnClass":"btn btn-ghost"
+	}
+]
